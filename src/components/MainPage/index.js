@@ -24,7 +24,7 @@ const MainPage = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       dispatchApi();
-    }, 3000);
+    }, 30000);
 
     dispatchApi();
 

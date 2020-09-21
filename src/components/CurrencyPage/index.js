@@ -38,7 +38,7 @@ const CurrencyPage = ({ match }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       dispatchData();
-    }, 3000);
+    }, 30000);
     dispatchData();
     return () => clearInterval(timer);
   }, [dispatchData]);
