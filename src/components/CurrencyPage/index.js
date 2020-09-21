@@ -36,7 +36,11 @@ const CurrencyPage = ({ match }) => {
   const apiState = useSelector((state) => state.api);
 
   useEffect(() => {
+    const timer = setInterval(() => {
+      dispatchData();
+    }, 3000);
     dispatchData();
+    return () => clearInterval(timer);
   }, [dispatchData]);
 
   return (
