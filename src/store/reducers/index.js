@@ -1,11 +1,10 @@
-import { combineReducers } from 'redux';
-import api, { initialApiState } from './api';
-
+import { combineReducers } from "redux";
+import api, { initialApiState } from "./api";
 
 export const initialState = {
-    api: initialApiState,
+  api: initialApiState,
 };
 
 export default combineReducers({
-    api,
+  api,
 });
